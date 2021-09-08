@@ -5,7 +5,7 @@ import nltk
 nltk.download('words')
 from nltk.corpus import words
 
-DATASET_PATH = "../data/Amharic_Dataset.csv"
+DATASET_PATH = "../data/dataS.csv"
 JSON_PATH = "../data/data_json.json"
 
 data = pd.read_csv(DATASET_PATH)
