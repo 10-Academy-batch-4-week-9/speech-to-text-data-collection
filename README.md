@@ -1,3 +1,3 @@
 # speech-to-text-data-collection
 
-[![CRAN release](https://www.r-pkg.org/badges/version/rmarkdown)](https://cran.r-project.org/package=rmarkdown)
+[![Codecov test coverage](https://codecov.io/gh/rstudio/rmarkdown/branch/master/graph/badge.svg)](https://codecov.io/gh/rstudio/rmarkdown?branch=master)
