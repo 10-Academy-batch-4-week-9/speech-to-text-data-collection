@@ -1,3 +1,7 @@
 # speech-to-text-data-collection
 
-[![Codecov test coverage](https://codecov.io/gh/rstudio/rmarkdown/branch/master/graph/badge.svg)](https://codecov.io/gh/rstudio/rmarkdown?branch=master)
+<div align="center">
+    <br>
+    <img src="https://github.com/questo-ai/kafka/raw/master/docs/Header.jpg" width="600"/>
+    <hr/>
+</div>
