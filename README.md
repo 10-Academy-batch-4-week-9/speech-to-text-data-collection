@@ -1,5 +1,5 @@
 
-# speech-to-text-data-collection
+# Speech-to-text-data-collection
 ![](Picture/mic2.jpg)
 
 Speech recognition technology allows for hands-free control of smartphones, speakers, and even vehicles in a wide variety of languages. Companies have moved towards the goal of
