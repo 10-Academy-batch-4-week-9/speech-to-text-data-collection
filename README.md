@@ -12,4 +12,5 @@ suitable format to train a speech-t0-text model
 - ``Apache Kafka``: To sequentially log streaming data into specific topics
 - ``Apache Airflow``: used  to create, orchestrate and monitor data workflows. In other words, he will be used to create and update the model, whilst also scheduling such tasks.
 - ``S3 Buckets``: For storing transformed streaming data
+- ``Appache Spark`` : It will be used for data preprocessing,to validate the data   and finally transform the data into corpus text.
 
