@@ -1,5 +1,5 @@
 # speech-to-text-data-collection
-![](Picture/mic2.jpg 100*15)
+![](Picture/mic2.jpg)
 
 Speech recognition technology allows for hands-free control of smartphones, speakers, and even vehicles in a wide variety of languages. Companies have moved towards the goal of
 enabling machines to understand and respond to more and more of our verbalized commands. There are many matured speech recognition systems available, such as Google Assistant,
