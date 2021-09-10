@@ -16,4 +16,4 @@ suitable format to train a speech-t0-text model
 
 
 ##DAG
-![](Picture/model.jpg)
+![](Picture/model.PNG)
