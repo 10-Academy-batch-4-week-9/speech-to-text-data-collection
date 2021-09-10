@@ -14,3 +14,6 @@ suitable format to train a speech-t0-text model
 - ``S3 Buckets``: For storing transformed streaming data
 - ``Appache Spark`` : It will be used for data preprocessing,to validate the data   and finally transform the data into corpus text.
 
+
+##DAG
+![](Picture/model.jpg)
