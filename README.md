@@ -9,7 +9,7 @@ can be deployed to process posting and receiving text and audio files from and i
 suitable format to train a speech-t0-text model
 
 ## Technologies used 
-- 'Apache Kafka': To sequentially log streaming data into specific topics
-Apache Airflow: To create,ocherstrate and monitor data workflows
-S3 Buckets: For storing transformed streaming data
+- ``Apache Kafka``: To sequentially log streaming data into specific topics
+- ``Apache Airflow``: used  to create, orchestrate and monitor data workflows. In other words, he will be used to create and update the model, whilst also scheduling such tasks.
+- ``S3 Buckets``: For storing transformed streaming data
 
