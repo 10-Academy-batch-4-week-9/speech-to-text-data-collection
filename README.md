@@ -14,10 +14,10 @@
 <h1>Learning Objectives</h1>
 
 <b>Skills:</b>
-Create and maintain an Apache Kafka cluster
-Work with Apache Airflow  and Apache Spark
-Apply Structured Streaming to process streaming data.
-Building data pipelines and orchestration workflows
+* Create and maintain an Apache Kafka cluster
+* Work with Apache Airflow  and Apache Spark
+* Apply Structured Streaming to process streaming data.
+* Building data pipelines and orchestration workflows
 
 
 <b>Knowledge:</b>
@@ -34,7 +34,7 @@ Loading....
 * [christian ZANOU](https://github.com/Zchristian955)
 * [Desmond Onam](https://github.com/Desmondonam)
 * [Eyerusalem](https://github.com/eyerus21)
-* [Khairat A](https://github.com/khaiyra)
+* [Khairat Ayinde](https://github.com/khaiyra)
 * [Natneal Teshome](https://github.com/Natty-star)
 * [Zelalem Getahun](https://github.com/zelalemgetahun9374)
 
