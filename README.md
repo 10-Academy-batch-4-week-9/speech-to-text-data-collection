@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 # Speech-to-text-data-collection
 ![](Picture/mic2.jpg)
@@ -70,4 +70,3 @@ Loading....
 
 
   
->>>>>>> main
