@@ -1,24 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Africa Underresourced Languages Collection Initiative</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="/static/css/app.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Africa Underresourced Languages Collection Initiative</h1>
-    <h2>{{data}}</h2>
-    <div id="controls">
-     <button id="recordButton">Record</button>
-     <button id="pauseButton" disabled>Pause</button>
-     <button id="stopButton" disabled>Stop</button>
+
+    <div class="wrapper">
+
+      <header>
+        <h1>African Underresourced Languages Collection Initiative</h1>
+      </header>
+
+       <!-- Message Section -->
+       <section class="text-container">
+        <h2>{{data}}</h2>
+        <button id="new-text-btn">Get New Text</button>
+      </section>
+
+      <!-- End Message Section -->
+
+      <section class="main-controls">
+        <canvas class="visualizer" height="60px"></canvas>
+        <div id="buttons">
+          <button class="record">Record</button>
+          <button class="stop">Stop</button>
+        </div>
+      </section>
+
+      <section class="sound-clips">
+
+
+      </section>
+      
+
     </div>
-    <div id="formats">Format: start recording to see sample rate</div>
-    <p><strong>Recordings:</strong></p>
-    <ol id="recordingsList"></ol>
-    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
-    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
-    <script src="/static/js/app.js"></script>
+
+    <label for="toggle">❔</label>
+    <input type="checkbox" id="toggle">
+    <aside>
+      <h2>Information</h2>
+
+      <p>Web dictaphone is built using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator.getUserMedia">getUserMedia</a> and the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder_API">MediaRecorder API</a>, which provides an easier way to capture Media streams.</p>
+
+      <p>Icon courtesy of <a href="http://findicons.com/search/microphone">Find Icons</a>. Thanks to <a href="http://soledadpenades.com/">Sole</a> for the Oscilloscope code!</p>
+    </aside>
+    <script src="static/js/app.js"></script>
+
   </body>
 </html>
