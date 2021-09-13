@@ -29,6 +29,7 @@
   .main-controls {
     padding: 0.5rem 0;
   }
+  
   canvas {
     display: block;
     margin-bottom: 0.5rem;
@@ -48,7 +49,7 @@
   
   button {
     font-size: 1rem;
-    background: #909ba0;
+    background: #0088cc;
     text-align: center;
     color: white;
     border: none;
@@ -58,10 +59,11 @@
   
   button:hover, button:focus {
     box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 1);
-    background: rgb(176, 185, 189);
+    background: #0ae;
   }
+  
   button:active {
-    box-shadow: inset 0px 0px 20px rgba(163, 42, 42, 0.5);
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5);
     transform: translateY(2px);
   }
   
@@ -87,6 +89,7 @@
     display: block;
     margin: 1rem auto 0.5rem;
   }
+  
   .clip p {
     display: inline-block;
     font-size: 1rem;
@@ -120,6 +123,7 @@
      position: absolute;
      top: -100px;
   }
+  
   aside {
     position: fixed;
     top: 0;
@@ -151,8 +155,9 @@
   .clip p {
     cursor: pointer;
   }
-/* Adjustments for wider screens */
-@media all and (min-width: 800px) {
+  
+  /* Adjustments for wider screens */
+  @media all and (min-width: 800px) {
     /* Don't take all the space as readability is lost when line length
        goes past a certain size */
     .wrapper {
@@ -161,13 +166,3 @@
       margin: 0 auto;
     }
   }
-  
-  
-  /* New Code */
-  #text-corpus{
-    margin: 1rem;
-    margin-left: 0px;
-  
-    font-size: 14px;
-    text-align: center;
-  }    
