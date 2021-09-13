@@ -5,6 +5,7 @@ const stop = document.querySelector('.stop');
 const soundClips = document.querySelector('.sound-clips');
 const canvas = document.querySelector('.visualizer');
 const mainSection = document.querySelector('.main-controls');
+const nextText = document.querySelector('#new-text-btn');
 
 // disable stop button while not recording
 
@@ -17,6 +18,10 @@ let audioCtx;
 const canvasCtx = canvas.getContext("2d");
 
 //main block for doing the audio recording
+
+nextText.onclick = function() {
+    location.reload();
+  }
 
 if (navigator.mediaDevices.getUserMedia) {
   console.log('getUserMedia supported.');
@@ -104,6 +109,8 @@ if (navigator.mediaDevices.getUserMedia) {
         fd.append("audio_data",blob, filename);
         xhr.open("POST","/",true);
         xhr.send(fd);
+        location.reload();
+        
   })
 
       clipLabel.onclick = function() {
