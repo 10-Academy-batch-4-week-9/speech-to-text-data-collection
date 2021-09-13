@@ -13,7 +13,7 @@ app = Flask(__name__)
 def index():
     if request.method == 'GET':
         # randomly select text and send to user
-        text =  "አገራችን ከአፍሪካም ሆነ ከሌሎች የአለም አገራት ጋር ያላትን አለም አቀፋዊ ግንኙነት ወደ ላቀ ደረጃ ያሸጋገረ ሆኗል በአገር ውስጥ አራት አለም ጀልባያውም የወረቀት"
+        text =  "የተሻለ ብቃት ያሳዩ ቦክሰኞች ለቶኪዮ ኦሊምፒክ ማጣሪያ ተሳታፊ እንደሚሆኑም ታውቋል"
         return render_template('index.html',data=text)
     if request.method == "POST":
         f = request.files['audio_data']
@@ -23,7 +23,6 @@ def index():
         print('file uploaded successfully')
 
         return render_template('index.html', request="POST")
-
 
 
 if __name__ == "__main__":
