@@ -9,6 +9,7 @@ import json
 import boto3
 import logging
 import hashlib
+import datetime;
 from botocore.exceptions import ClientError
 import io
 import soundfile as sf
@@ -46,7 +47,6 @@ def my_gen():
                          enable_auto_commit=True,
                          group_id='my-groupqp09',
                          bootstrap_servers=['b-1.demo-cluster-1.9q7lp7.c1.kafka.eu-west-1.amazonaws.com:9092'])
-    # tp = TopicPartition('group4_text_corpus',0)
 
     for message in consumer:
         yield message.value.decode()
@@ -62,6 +62,9 @@ def index():
         print(transcription)
         hash_object = hashlib.md5(transcription.encode())
         filename = hash_object.hexdigest()
+        ct = datetime.datetime.now()
+        ts = ct.timestamp()
+        filename = f'{filename}-{ts}'
         print(filename)
 
         with open(f'{filename}.wav', 'wb') as audio:
@@ -85,22 +88,8 @@ def index():
                 # Decide what to do if produce request failed...
                 log.exception()
                 pass
-        
-            # print (record_metadata.topic)
-            # print(data)
-            # print(json.dumps(data).encode('utf-8'))
-            # print(json.dumps(data).encode('utf-8').decode())
-
-
-        # b = f.read()
-
-        # print(type(f))
-        # print('---------')
-        # print(b)
-        # print('---------')
 
         return redirect(url_for("index"))
-        # return render_template('index.html', data=next(text_gen), request="GET")
     
     else:
         return render_template('index.html',data=next(text_gen))
