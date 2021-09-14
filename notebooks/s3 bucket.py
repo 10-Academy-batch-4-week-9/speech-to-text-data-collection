@@ -87,9 +87,6 @@ def download_file(BUCKET_NAME, OBJECT_NAME, FILE_NAME):
     s3.download_file(BUCKET_NAME, OBJECT_NAME, FILE_NAME)
 
 
-    
-
-
 if __name__ == '__main__':
     # response = create_bucket('group4-audio-bucket')
     # response = upload_file('Amharic News Dataset.csv', 'choquet-bruhat-bucket')
