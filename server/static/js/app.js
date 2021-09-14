@@ -8,6 +8,7 @@ const mainSection = document.querySelector('.main-controls');
 const nextText = document.querySelector('#new-text-btn');
 const transcription = document.querySelector('#transcription');
 
+
 // disable stop button while not recording
 
 stop.disabled = true;
@@ -113,6 +114,7 @@ if (navigator.mediaDevices.getUserMedia) {
         xhr.send(fd);
         location.reload();
         
+
   })
 
       clipLabel.onclick = function() {
