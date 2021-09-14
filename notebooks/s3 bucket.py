@@ -63,12 +63,35 @@ def upload_file(file_name, bucket, object_name=None):
         return False
     return True
 
+def load_audio_s3(bucket_name: str, file_name: str):
+    """ Load transcription data from s3 bucket"""
+    s3 = boto3.resource(
+        service_name='s3',
+        region_name='us-east-1'
+    )
+    # Load file directly into python
+    obj = s3.Bucket(bucket_name).Object(file_name).get()
+    return obj['Body'].read()
+
+def list_files(bucket_name):
+    s3 = boto3.resource(
+        service_name='s3',
+        region_name='us-east-1'
+    )
+
+    for obj in s3.Bucket(bucket_name).objects.all():
+        print(obj.key)
+
 def download_file(BUCKET_NAME, OBJECT_NAME, FILE_NAME):
     s3 = boto3.client('s3')
     s3.download_file(BUCKET_NAME, OBJECT_NAME, FILE_NAME)
 
 
+    
+
+
 if __name__ == '__main__':
-    # response = create_bucket('group4-bucket')
-    response = upload_file('Amharic News Dataset.csv', 'choquet-bruhat-bucket')
-    print(response)
+    # response = create_bucket('group4-audio-bucket')
+    # response = upload_file('Amharic News Dataset.csv', 'choquet-bruhat-bucket')
+    # print(response)
+    list_files('group4-audio-bucket')

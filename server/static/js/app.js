@@ -6,6 +6,7 @@ const soundClips = document.querySelector('.sound-clips');
 const canvas = document.querySelector('.visualizer');
 const mainSection = document.querySelector('.main-controls');
 const nextText = document.querySelector('#new-text-btn');
+const transcription = document.querySelector('#transcription');
 
 // disable stop button while not recording
 
@@ -107,6 +108,8 @@ if (navigator.mediaDevices.getUserMedia) {
         };
         var fd=new FormData();
         fd.append("audio_data",blob, filename);
+        console.log(transcription.innerHTML)
+        fd.append("transcription", transcription.innerHTML)
         xhr.open("POST","/",true);
         xhr.send(fd);
         location.reload();
