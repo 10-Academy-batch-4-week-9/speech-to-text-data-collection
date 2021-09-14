@@ -108,7 +108,6 @@ if (navigator.mediaDevices.getUserMedia) {
         };
         var fd=new FormData();
         fd.append("audio_data",blob, filename);
-        console.log(transcription.innerHTML)
         fd.append("transcription", transcription.innerHTML)
         xhr.open("POST","/",true);
         xhr.send(fd);
